@@ -1,4 +1,4 @@
-
+//listening for button to be clicked
  $("button").on("click", function() {
 
     var card = $(this).attr("card-body");
@@ -29,10 +29,11 @@
     var restaurantImage = $("<img>");
 
     restaurantImage.attr("src", results[i].images.fixed_height.url);
-
+//appending onto screen
+//stacking below
     buttonDiv.append(p);
     buttonDiv.append(restaurantImage);
-
+//stacking ontop
     $("#gifs-appear-here").prepend(gifDiv);
 
 
